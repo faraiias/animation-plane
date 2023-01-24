@@ -1,0 +1,48 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: 0;
+}
+.container {
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 98vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.runway {
+    background-image: url(road.jpg);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    background-repeat: repeat-x;
+}
+img {
+    position: absolute;
+    width: 40%;
+    bottom: 150px;
+    right: -700px;
+    animation: plane 5s linear infinite;
+}
+@keyframes plane {
+    0% {
+        transform: translateY(0px)
+                    translateX(0px)
+                    rotate(0deg)
+    }
+    50% {
+        transform: translateY(0px)
+                   translateX(-1000px)
+                   rotate(5deg)
+    }
+    100% {
+        transform: translateY(-900px)
+                   translateX(-4000px)
+                   rotate(20deg)
+    }
+}
